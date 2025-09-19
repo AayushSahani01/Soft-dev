@@ -6,7 +6,12 @@
     height: auto;
     margin-top: 6px;
 }
-
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(64,191,255);
+}
 
 .items{
     display: flex;
@@ -17,4 +22,8 @@
 
 .hot-deals span {
     font-weight: 600;
+}
+
+.footer {
+    background-color: rgb(188,221,254);
 }

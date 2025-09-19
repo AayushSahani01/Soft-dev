@@ -4,7 +4,7 @@ const Sidebar = () => {
   const [color, setColor] = useState(null);
 
   return (
-    <aside className="w-full col-span-3 pt-4 hidden md:block m-1.5 space-y-4">
+    <aside className="w-full col-span-3  pt-4 hidden md:block m-1.5 space-y-4">
       <div className="bg-slate-50 shadow-md rounded-lg px-4 py-6">
         <h2 className="font-bold uppercase text-lg  tracking-wide text-gray-800 mb-6">
           Hot Deals
@@ -73,20 +73,20 @@ const Sidebar = () => {
         <h2 className="font-bold mt-6 mb-2 uppercase">Brand</h2>
         <div className="pt-4 flex items-center justify-between space-y-4">
           <h4>Nike</h4>
-          <span>99</span>
+          <span className="text-gray-400 font-medium">99</span>
         </div>
 
         <div className=" flex items-center justify-between space-y-4">
           <h4>Nike</h4>
-          <span>99</span>
+          <span className="text-gray-400 font-medium">99</span>
         </div>
         <div className="flex items-center justify-between space-y-4">
           <h4>Adidas</h4>
-          <span>99</span>
+          <span className="text-gray-400 font-medium">99</span>
         </div>
         <div className="flex items-center justify-between space-y-4">
           <h4>Arimax</h4>
-          <span>99</span>
+          <span className="text-gray-400 font-medium">99</span>
         </div>
       </div>
     </aside>

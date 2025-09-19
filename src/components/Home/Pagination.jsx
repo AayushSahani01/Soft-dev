@@ -3,7 +3,7 @@
 
 const Pagination = () => {
   return (
-    <div className="flex justify-center mt-6 space-x-3">
+    <div className="flex justify-center bg-slate-200 p-2.5 text-gray-700 mt-6 space-x-3">
       {[1, 2, 3, 4, 5].map((p) => (
         <button
           key={p}

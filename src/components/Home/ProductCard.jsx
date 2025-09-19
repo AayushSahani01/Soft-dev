@@ -1,9 +1,10 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 
-const ProductCard = ({ products }) => {
-  return (
-    <div className=" rounded-lg py-4 px-2 hover:scale-105 border border-transparent hover:bg-white bg-gray-200  shadow-sm  hover:shadow-md transform duration-300 transition">
+const ProductCard =  (products) => {
+  return ( 
+  
+    <div className=" rounded-lg py-4 px-2">
       <span className="bg-red-500 text-white px-2 py-1 rounded text-xs">HOT</span>
       <img
         src={products.img}
@@ -22,7 +23,7 @@ const ProductCard = ({ products }) => {
         <span className="text-red-500">24% off</span>
       </p>
     </div>
-  );
-};
+
+  );};
 
 export default ProductCard;

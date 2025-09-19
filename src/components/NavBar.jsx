@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <div className="">
       <div className="container mx-auto  py-2 flex justify-between items-center">
-     <img src="/logo.png" alt="logo" srcset=""  />
+     <img src="/logo.png" alt="logo" />
         <div>
           <ul className="items flex space-x-16 font-bold">
             <Link to="/">

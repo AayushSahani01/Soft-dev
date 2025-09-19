@@ -27,8 +27,8 @@ function App() {
         <main className="col-span-9 p-4">
           {/* Banner */}
           <Banner />
-
-          
+          {/* Products */}
+          <ProductCard />
 
           {/* Pagination */}
           <Pagination />

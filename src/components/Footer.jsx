@@ -4,8 +4,8 @@ import { Facebook, Twitter } from "lucide-react";
 const Footer = () => {
   return (
     <>
-      <div className="footer ">
-        <div className="flex items-center pt-18">
+      <div className="footer">
+        <div className="flex items-center mx-[4%] mr-[8%] pt-18">
           <div className="grid grid-flow-col px-[6%] py-8 gap-x-12  mr-[8%]">
             <div className="flex-col justify-center items-center space-y-4  w-1/2 h-full">
               <img src="/logo.png" alt="images" />
@@ -15,14 +15,14 @@ const Footer = () => {
                 text ever.Since the 1500s, when an unknown printer.
               </h2>
             </div>
-            <div className="flex-col justify-center items-center space-y-4 w-1/3">
+            <div className="flex-col justify-start items-center space-y-4 w-1/3">
               <h2 className="font-bold text-medium">Follow Us</h2>
               <p className="text-[12px] font-normal leading-[18px]  ">
                 Since the 1500s, when an unknown printer took a galley of type
                 and scrambled.
               </p>
-              <div className="flex justify-start items-center space-x-6">
-                <span className="cursor-pointer p-2">
+              <div className="flex justify-start items-center space-x-8">
+                <span className="cursor-pointer">
                   <Facebook className="w-6 h-6 text-blue-800 fill-blue-500 hover:text-blue-700 hover:scale-[1.3] transition-all duration-300 ease-in-out" />
                 </span>
                 <span className="cursor-pointer ">

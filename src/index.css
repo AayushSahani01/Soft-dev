@@ -43,6 +43,7 @@
 .Naming-list {
   color: black;
   text-transform: uppercase;
+  background-color: rgba(253, 251, 251, 0.924);
   padding: 10px;
   cursor: pointer;
 }
@@ -65,8 +66,16 @@
 
   &:hover {
     cursor: pointer;
-    color: aqua;
+    color: rgba(63, 187, 232, 0.828);
   }
+}
+
+.hot-tag {
+   background-color: rgba(255, 72, 88, 1);
+   color: white;
+   letter-spacing: 0.4px;
+   font-weight: 400;
+   text-transform: uppercase;
 }
 
 .footer {

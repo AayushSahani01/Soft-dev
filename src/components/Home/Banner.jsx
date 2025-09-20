@@ -39,7 +39,7 @@ const Banner = () => {
             <button className="mt-4 px-4 py-2 text-white rounded-lg ">
               <span
                 className="button-shop-now hover:text-blue-500  hover:bg-transparent transition-all duration-300 ease-in-out cursor-pointer "
-                onClick={() => window.scrollTo(0, 0)}
+                
               >
                 {" "}
                 Shop Now
@@ -65,7 +65,7 @@ const Banner = () => {
             {isOpen && (
               <div className="Naming-dropdown absolute top-[100%] left-0 right-0 w-fit z-99 h-0.5  bg-gradient-to-r from-blue-400 to-blue-500">
                 <div
-                  className="Naming-list ">
+                  className="Naming-list"onClick={() => window.scrollTo(0, 0)}>
                   <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center ">Nikes</div>
                   <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center ">Dell</div>
                   <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center  ">Apple</div>
@@ -91,7 +91,7 @@ const Banner = () => {
             {isShow && (
               <div className="Naming-dropdown absolute top-[100%] left-0 right-0 w-fit z-99 h-0.5 bg-gradient-to-r from-blue-400 to-blue-500">
                   <div
-                  className="Naming-list ">
+                  className="Naming-list" onClick={() => window.scrollTo(0, 0)}>
                   <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center ">Nikes</div>
                   <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center ">Dell</div>
                   <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center  ">Apple</div>

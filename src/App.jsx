@@ -9,39 +9,29 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
-      <BrowserRouter basename="/">
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Navbar />{" "}
-              </>
-            }
-          />
-        </Routes>
-      </BrowserRouter>
+    <BrowserRouter basename="/">
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <div className="grid grid-cols-12 pt-12">
+                <Sidebar />
 
-      <div className="grid grid-cols-12">
-        {/* Sidebar */}
-        <Sidebar />
-
-        {/* Main Content */}
-        <main className="col-span-9 p-4">
-          {/* Banner */}
-          <Banner />
-          {/* Products */}
-          <ProductCard />
-          <ProductCard />
-
-          {/* Pagination */}
-          <Pagination />
-        </main>
-      </div>
-      {/* Footer */}
-      <Footer />
-    </div>
+                <main className="col-span-9 p-4">
+                  <Banner />
+                  <ProductCard />
+                   <ProductCard />
+                  <Pagination />
+                </main>
+              </div>
+              <Footer />
+            </>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

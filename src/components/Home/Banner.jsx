@@ -57,30 +57,31 @@ const Banner = () => {
           <div className="md:flex items-center">
             <h2>Sort by</h2>
           </div>
-          <div style={{ display: "inline-block" }}>
-            <button onClick={toggleopen} className="flex justify-center   items-center hover:text-blue-500 "><p className="px-6 hidden md:block ">Name</p>
+          <div style={{ display: "inline-block", position:"relative",  }}>
+            <button onClick={toggleopen} className="flex justify-center   items-center hover:text-blue-500 hover:bg-slate-200 rounded-sm p-1.5 text-center"><p className="px-6 hidden md:block">Name</p>
              <FaCaretDown className="ml-8 hidden md:block lg:block" size={17} color="#000"/>
             </button>
 
             {isOpen && (
-              <div className="Naming-dropdown">
+              <div className="Naming-dropdown absolute top-[100%] left-0 right-0 w-fit z-99 h-0.5  bg-gradient-to-r from-blue-400 to-blue-500">
                 <div
-                  className="Naming-list space-y-3 ">
-                  <div className="hover:text-blue-500 ">Nikes</div>
-                  <div className="hover:text-blue-500 ">Dell</div>
-                  <div className="hover:text-blue-500 ">Apple</div>
-                  <div className="hover:text-blue-500 ">Adidas</div>
+                  className="Naming-list ">
+                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center ">Nikes</div>
+                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center ">Dell</div>
+                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center  ">Apple</div>
+                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center  ">Adidas</div>
                 </div>
               </div>
             )}
           </div>
 
           <div 
-          style={{ display: "inline-block" 
+          style={{ display: "inline-block", 
+            position:"relative",
 
           }}
          >
-            <button onClick={toggleshow} className="flex justify-center items-center text-[16px] hover:text-blue-500"> <div className="px-6 hidden md:block " >
+            <button onClick={toggleshow} className="flex justify-center items-center text-[16px] hover:text-blue-500  hover:bg-slate-200 rounded-sm p-1.5 text-center"> <div className="px-6 hidden md:block " >
               Show 
               <span className="ml-6 font-medium">{" 12 "}</span>
               </div> 
@@ -88,14 +89,13 @@ const Banner = () => {
             </button>
 
             {isShow && (
-              <div className="Naming-dropdown">
-                <div
-                  className="Naming-list space-y-3 ">
-                  
-                  <div className="hover:text-blue-500 ">Nikes</div>
-                  <div className="hover:text-blue-500 ">Dell</div>
-                  <div className="hover:text-blue-500 ">Apple</div>
-                  <div className="hover:text-blue-500 ">Adidas</div>
+              <div className="Naming-dropdown absolute top-[100%] left-0 right-0 w-fit z-99 h-0.5 bg-gradient-to-r from-blue-400 to-blue-500">
+                  <div
+                  className="Naming-list ">
+                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center ">Nikes</div>
+                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center ">Dell</div>
+                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center  ">Apple</div>
+                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center  ">Adidas</div>
                 </div>
               </div>
             )}
@@ -104,10 +104,10 @@ const Banner = () => {
         <div className="flex justify-end gap-x-8 ">
           <div className="hidden md:block
            hover:text-blue-500 hover:scale-125 transition-all duration-300 ease-in-out" >
-            <Grip className="cursor-pointer "
+            <Grip className="cursor-pointer"
 />
           </div>
-          <div className="">
+          <div className="hover:scale-125 transition-all duration-300 ease-in-out">
             <Menu />
           </div>
         </div>

@@ -1,0 +1,49 @@
+import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
+import { ArrowLeft } from "lucide-react"
+
+const PageNotFound = () =>  {
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    setIsVisible(true)
+  }, [])
+
+  return (
+    <div className="h-screen bg-gradient-to-br from-blue-500 via-blue-400 to-purple-500 flex flex-col justify-center items-center">
+       
+        <div className={`relative ${isVisible ? 'animate-fade-in' : ''}`}>
+          <h1 className="text-3xl md:text-5xl lg:text-7xl xl:text-9xl font-black text-white mb-4 animate-pulse">
+            Error{" "}
+            <span className="inline-block animate-bounce delay-100">4</span>
+            <span className="inline-block animate-bounce delay-200">0</span>
+            <span className="inline-block animate-bounce delay-300">4</span>
+          </h1>
+          <div className="w-3/4 h-2 bg-white/90 mx-auto rounded-full overflow-hidden">
+            <div className="h-full bg-slate-200 w-full rounded-full animate-bounce"></div>
+          </div>
+        </div>
+
+         
+
+        <div className="pt-10 flex flex-col sm:flex-row gap-4 justify-center items-center relative z-10">
+          
+
+          <Link
+            to={"/"}
+            className="px-4 py-3 border border-blue-400 text-white hover:bg-white hover:text-blue-500 shadow-lg rounded-md flex items-center gap-4 text-sm font-medium transition-all duration-200 transform hover:scale-[1.1]"          >
+            <ArrowLeft className="w-6 h-6" />
+            Back To Home
+          </Link>
+          <Link
+            to={""}
+            className="px-4 py-3 border border-blue-400 text-white hover:bg-white hover:text-blue-500 shadow-lg rounded-md flex items-center gap-4 text-sm font-medium transition-all duration-200 transform hover:scale-[1.1]"
+          >
+            Learn More
+          </Link>
+        </div>
+      </div>  
+  )
+}
+
+export default PageNotFound;

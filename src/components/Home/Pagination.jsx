@@ -10,10 +10,10 @@ const Pagination = () => {
         <button
           key={p}
           type="button"
-          className="px-5 py-3 shadow-sm hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400 hover:text-white rounded-md border border-gray-400 font-bold">
+          className="px-5 py-3 shadow-sm hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400 hover:text-white rounded-md border-transparent font-bold cursor-pointer">
           {p}
         </button>
-      ))}
+      ))} 
     </div>
   );
 };

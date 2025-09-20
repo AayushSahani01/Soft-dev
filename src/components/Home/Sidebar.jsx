@@ -55,11 +55,10 @@ const Sidebar = () => {
         </label>
         <input
           type="range"
-          id="priceRange"
-          min="13.99"
-          max="25.99"
-          defaultValue={20}
-          className="w-full mt-4 appearance-auto h-2  cursor-pointer transition-all duration-300 ease-in-out outline-none accent-blue-500"
+          min={"13.99"}
+          max={"25.99"}
+          defaultValue={14}
+          className="w-full mt-4 h-2  cursor-pointer transition-all duration-300 ease-in-out outline-none accent-blue-500"
         />
       </div>
       <div className="bg-slate-50 shadow-md rounded-sm px-4 py-6">

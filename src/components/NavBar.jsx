@@ -5,34 +5,46 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 bg-white shadow-md z-10">
-    {/* <div> */}
       <div className="container mx-auto py-2 flex justify-between items-center">
-     <img src="/logo.png" alt="logo" />
+        <Link to="/">
+          <img src="/logo.png" alt="logo" />
+        </Link> 
+
         <div>
           <ul className="items flex space-x-16 font-bold">
             <Link to="/">
-              <li className="cursor-pointer hover:text-blue-400 transition-all duration-300 ease-in-out  ">Home</li>
+              <li className="cursor-pointer hover:text-blue-400 transition-all duration-300 ease-in-out  ">
+                Home
+              </li>
             </Link>
             <Link to="/bags">
-              <li className="cursor-pointer hover:text-blue-400 transition-all duration-300 ease-in-out">Bag</li>
+              <li className="cursor-pointer hover:text-blue-400 transition-all duration-300 ease-in-out">
+                Bag
+              </li>
             </Link>
             <Link to="/sneakers">
-              <li className="cursor-pointer hover:text-blue-400 transition-all duration-300 ease-in-out">Sneakers</li>
+              <li className="cursor-pointer hover:text-blue-400 transition-all duration-300 ease-in-out">
+                Sneakers
+              </li>
             </Link>
             <Link to="/belt">
-              <li className="cursor-pointer hover:text-blue-400 transition-all duration-300 ease-in-out">Belt</li>
+              <li className="cursor-pointer hover:text-blue-400 transition-all duration-300 ease-in-out">
+                Belt
+              </li>
             </Link>
             <Link to="/contact">
-              <li className="cursor-pointer hover:text-blue-400 transition-all duration-300 ease-in-out" >Contact</li>
+              <li className="cursor-pointer hover:text-blue-400 transition-all duration-300 ease-in-out">
+                Contact
+              </li>
             </Link>
           </ul>
         </div>
         <div className="flex space-x-8 justify-end items-center">
-          <MdOutlineLocalGroceryStore className="w-6 h-6 cursor-pointer hover:text-blue-400 hover:scale-110 transition-all duration-300 ease-in-out" />
+          <MdOutlineLocalGroceryStore className="w-6 h-6 cursor-pointer hover:text-blue-400 hover:scale-[1.2] transition-all duration-300 ease-in-out" />
 
           <div className="flex space-x-4 text-xl">
-            <h4>items</h4>
-            <h5 className=" text-slate-500">$0.00</h5>
+            <h4>Items</h4>
+            <h5 className=" text-slate-400">$0.00</h5>
           </div>
         </div>
       </div>

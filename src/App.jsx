@@ -18,11 +18,12 @@ function App() {
             <>
               <Navbar />
               {/* Left Side Bar */}
-              <div className="grid grid-cols-12 pt-12">
+              <div className="grid grid-cols-12 pt-12 ">
                 <Sidebar />
 
                 {/* Main home Section here */}
-                <main className="col-span-9 p-4">
+                <main className="col-span-9 p-4 max-sm:col-span-12
+                 max-md:col-span-12 ">
                   <Banner />
                    <ProductCard />
                   <Pagination />

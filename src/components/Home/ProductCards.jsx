@@ -66,7 +66,7 @@ const products = [
 
 function ProductCard() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-4 space-y-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 pt-4 space-y-4">
       {products.map((product) => (
         <div
           key={product.id}
@@ -80,11 +80,11 @@ function ProductCard() {
           }
 
           <img
-            src={product.image} 
+            src={product.image}
             alt={product.title}
-            className="w-full h-40 bg-center object-cover "
+            className="w-full h-42 object-cover bg-center  bg-no-repeat pb-0.5"
           />
-          <div className="flex flex-col text-center  justify-center items-center ">
+          <div className="flex flex-col text-center p-1">
             <h4
               style={{
                 color: "rgba(34, 50, 99, 1)",
@@ -139,7 +139,7 @@ function ProductCard() {
           </div>
         </div>
       ))}
-      </div>
+    </div>
   );
 }
 

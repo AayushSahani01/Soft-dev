@@ -3,7 +3,7 @@ import React from "react";
 const Pagination = () => {
   const NumberOfPages = [1, 2, 3, 4, 5];
   return (
-    <div className="pt-12 sm:pt-2 md:pt-0 lg:pt-4">
+    <div className="pt-4 md:pt-10 lg:pt-0 ">
       <div className="flex justify-center bg-slate-100 p-0.5 text-gray-700 mt-6 ">
         {NumberOfPages.map((p) => (
           <button

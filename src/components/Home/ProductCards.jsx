@@ -62,11 +62,14 @@ const products = [
     rating: 4,
     isHot: true,
   },
+   
 ];
 
 function ProductCard() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 pt-4 space-y-4">
+    <div className="w-full lg:h-auto ">
+
+    <div className="container mx-auto max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 pt-4 space-y-3 ">
       {products.map((product) => (
         <div
           key={product.id}
@@ -78,9 +81,11 @@ function ProductCard() {
               Hot
             </div>
           }
+ 
+  
 
           <img
-            src={product.image}
+            src={product.image} 
             alt={product.title}
             className="w-full h-42 object-cover bg-center  bg-no-repeat pb-0.5"
           />
@@ -139,7 +144,8 @@ function ProductCard() {
           </div>
         </div>
       ))}
-    </div>
+      </div>
+      </div>
   );
 }
 

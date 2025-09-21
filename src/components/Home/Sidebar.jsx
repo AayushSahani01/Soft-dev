@@ -110,15 +110,15 @@ const Sidebar = () => {
           <p>99</p>
         </div>
       </div>
-      <div className="p-0 pt-4">
-        <div className="bg-slate-50 px-4 py-4 shadow-sm rounded-lg text-center hover:bg-slate-200">
+      <div className="pt-6 ">
+        <div className="bg-slate-100 px-4 py-4 shadow-sm rounded-lg text-center hover:bg-slate-200">
           <button
-            className="font-medium text-slate-700 uppercase hover:text-blue-400 cursor-pointer inline-block"
+            className="font-medium text-slate-700 uppercase hover:text-blue-400 cursor-pointer transition-all duration-300 ease-in-out"
             onClick={clickMore}
           >
             More
           </button>
-          {more ? "" : <h2 className="text-xs text-red-500 uppercase">Not Available!</h2>}
+          {more ? "" : <h2 className="text-xs text-overline text-slate-500 uppercase">Not Available!</h2>}
         </div>
       </div>
     </aside>

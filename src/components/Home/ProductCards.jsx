@@ -5,7 +5,7 @@ const products = [
   {
     id: 1,
     title: "Nike Air Max 270 React",
-    image:"/img01.png",
+    image: "/img01.png",
     price: 299.43,
     oldPrice: 534.33,
     discount: 24,
@@ -62,92 +62,86 @@ const products = [
     rating: 4,
     isHot: true,
   },
-   
 ];
 
 function ProductCard() {
   return (
     <div className="w-full bg-white">
-
-    <div className="container max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 pt-2 space-y-4  mx-auto  ">
-      {products.map((product) => (
-        <div
-          key={product.id}
-          className={`relative rounded-md overflow-hidden flex flex-col items-center justify-center space-y-2 shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-108
+      <div className="container max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 pt-2 space-y-4  mx-auto  ">
+        {products.map((product) => (
+          <div
+            key={product.id}
+            className={`relative rounded-md overflow-hidden flex flex-col items-center justify-center space-y-2 shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-108
             `}
-        >
-          {
-            <div className="hot-tag absolute top-0.5 left-1 text-[16px] px-2 py-1 rounded-sm">
-              Hot
-            </div>
-          }
- 
-  
+          >
+            {
+              <div className="hot-tag absolute top-0.5 left-1 text-[16px] px-2 py-1 rounded-sm">
+                Hot
+              </div>
+            }
 
-          <img
-            src={product.image} 
-            alt={product.title}
-            className="w-full h-42 object-cover bg-center bg-no-repeat pb-0.5"
-          />
-          <div className="flex flex-col text-center p-1">
-            <h4
-              style={{
-                color: "rgba(34, 50, 99, 1)",
-                fontSize: "18px",
-                fontWeight: "700",
-                lineHeight: "150%",
-                letterSpacing: "0.6px",
-              }}
-            >
-              {product.title}
-            </h4>
-
-            <div className=" text-yellow-400 mb-2 text-[15.89px] justify-center items-center inline-block">
-              {Array.from({ length: 5 }).map((_, num) => (
-                <span
-                
-                key={num}
-                className={num < product.rating ? "" : "text-gray-400"}
-                >
-                  <MdOutlineStar className="inline-block w-5 h-4" />
-                </span>
-              ))
-              }
-            </div>
-
-            <div
-              style={{
-                display: "flex",
-                gap: "1rem",
-                paddingBottom: "0.5rem",
-              }}
-            >
-              <span
+            <img
+              src={product.image}
+              alt={product.title}
+              className="w-full h-42 object-cover bg-center bg-no-repeat pb-0.5"
+            />
+            <div className="flex flex-col text-center p-1">
+              <h4
                 style={{
-                  color: "rgba(64, 191, 255, 1)",
+                  color: "rgba(34, 50, 99, 1)",
                   fontSize: "18px",
                   fontWeight: "700",
                   lineHeight: "150%",
-                  letterSpacing: "0.5px",
+                  letterSpacing: "0.6px",
                 }}
               >
-                ${product.price}
-              </span>
-              <span className="line-through text-gray-400 pt-0.5">
-                ${product.oldPrice}
-              </span>
-              <span
-                className="text-[15.89px] font-medium"
-                style={{ color: "rgb(255, 102, 102)" }}
+                {product.title}
+              </h4>
+
+              <div className=" text-yellow-400 mb-2 text-[15.89px] justify-center items-center inline-block">
+                {Array.from({ length: 5 }).map((_, num) => (
+                  <span
+                    key={num}
+                    className={num < product.rating ? "" : "text-gray-400"}
+                  >
+                    <MdOutlineStar className="inline-block w-5 h-4" />
+                  </span>
+                ))}
+              </div>
+
+              <div
+                style={{
+                  display: "flex",
+                  gap: "1rem",
+                  paddingBottom: "0.5rem",
+                }}
               >
-                {product.discount}% <b>off</b>
-              </span>
+                <span
+                  style={{
+                    color: "rgba(64, 191, 255, 1)",
+                    fontSize: "18px",
+                    fontWeight: "700",
+                    lineHeight: "150%",
+                    letterSpacing: "0.5px",
+                  }}
+                >
+                  ${product.price}
+                </span>
+                <span className="line-through text-gray-400 pt-0.5">
+                  ${product.oldPrice}
+                </span>
+                <span
+                  className="text-[15.89px] font-medium"
+                  style={{ color: "rgb(255, 102, 102)" }}
+                >
+                  {product.discount}% <b>off</b>
+                </span>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
       </div>
-      </div>
+    </div>
   );
 }
 

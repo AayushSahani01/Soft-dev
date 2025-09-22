@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   width: 100%;
   padding: 0 20 0 20;
@@ -32,14 +37,14 @@
     color: rgb(205, 224, 224);
 } */
 .Naming-dropdown {
-  position : "relative";
-  top : "100%";
-  left : 0;
-  width : 100%;
-  border : "2px solid #f6f7f8";
-  background-color : white;
+  position: "relative";
+  top: "100%";
+  left: 0;
+  width: 100%;
+  border: "2px solid #f6f7f8";
+  background-color: white;
 }
- 
+
 .Naming-list {
   color: black;
   text-transform: uppercase;
@@ -71,11 +76,11 @@
 }
 
 .hot-tag {
-   background-color: rgba(255, 72, 88, 1);
-   color: white;
-   letter-spacing: 0.4px;
-   font-weight: 400;
-   text-transform: uppercase;
+  background-color: rgba(255, 72, 88, 1);
+  color: white;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .footer {

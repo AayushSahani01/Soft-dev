@@ -1,13 +1,63 @@
-# React + Vite
+# Soft-Dev
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview the Project
 
-Currently, two official plugins are available:
+### _Soft-Dev is a web application as frontend using React JS, Tailwind CSS._
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  - [About](#about)
 
-## Expanding the ESLint configuration
+  - [Getting Started](#getting-started)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Soft-dev
+  - [Prerequisites](#prerequisites)
+
+  - [Installation](#installation)
+
+  - [Running the Project](#running-the-project)
+
+## About
+
+This is a simple web application
+
+## Getting Started:--
+
+### Prerequisites
+
+- Node.js (v12.0.0 or higher)
+- npm (v6.4.1 or higher)
+- Git
+- ReactJS
+- Tailwind CSS
+
+### Installation
+
+_1. Clone the repository:_
+
+```
+
+git clone https://github.com/AayushSahani01/Soft-dev
+
+
+```
+
+_2. Install the dependencies:_
+
+```
+cd soft-dev
+
+npm install
+
+```
+
+## Running the Project
+
+**1. Run the project:**
+
+```
+
+npm start || npm run dev
+
+```
+
+**2. Open your browser and navigate to** `http://localhost:5173`.
+
+_The project should be now running locally._

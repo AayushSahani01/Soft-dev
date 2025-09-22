@@ -5,7 +5,7 @@ import { FaCaretDown } from "react-icons/fa6";
 
 const Banner = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isShow,setIsShow]=useState(false);
+  const [isShow, setIsShow] = useState(false);
   const toggleopen = () => {
     setIsOpen(!isOpen);
   };
@@ -37,10 +37,7 @@ const Banner = () => {
             </p>
 
             <button className="mt-4 px-4 py-2 text-white rounded-lg ">
-              <span
-                className="button-shop-now hover:text-blue-500  hover:bg-transparent transition-all duration-300 ease-in-out cursor-pointer "
-                
-              >
+              <span className="button-shop-now hover:text-blue-500  hover:bg-transparent transition-all duration-300 ease-in-out cursor-pointer ">
                 {" "}
                 Shop Now
               </span>
@@ -57,55 +54,88 @@ const Banner = () => {
           <div className="md:flex items-center">
             <h2>Sort by</h2>
           </div>
-          <div style={{ display: "inline-block", position:"relative",  }}>
-            <button onClick={toggleopen} className="flex justify-center   items-center hover:text-blue-500 hover:bg-slate-200 rounded-sm p-1.5 text-center"><p className="px-6 hidden md:block">Name</p>
-             <FaCaretDown className="ml-8 hidden md:block lg:block" size={17} color="#000"/>
+          <div style={{ display: "inline-block", position: "relative" }}>
+            <button
+              onClick={toggleopen}
+              className="flex justify-center   items-center hover:text-blue-500 hover:bg-slate-200 rounded-sm p-1.5 text-center"
+            >
+              <p className="px-6 hidden md:block">Name</p>
+              <FaCaretDown
+                className="ml-8 hidden md:block lg:block"
+                size={17}
+                color="#000"
+              />
             </button>
 
             {isOpen && (
               <div className="Naming-dropdown absolute top-[100%] left-0 right-0 w-fit z-99 h-0.5  bg-gradient-to-r from-blue-400 to-blue-500">
                 <div
-                  className="Naming-list"onClick={() => window.scrollTo(0, 0)}>
-                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center ">Nikes</div>
-                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center ">Dell</div>
-                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center  ">Apple</div>
-                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center  ">Adidas</div>
+                  className="Naming-list"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center ">
+                    Nikes
+                  </div>
+                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center ">
+                    Dell
+                  </div>
+                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center  ">
+                    Apple
+                  </div>
+                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center  ">
+                    Adidas
+                  </div>
                 </div>
               </div>
             )}
           </div>
 
-          <div 
-          style={{ display: "inline-block", 
-            position:"relative",
-
-          }}
-         >
-            <button onClick={toggleshow} className="flex justify-center items-center text-[16px] hover:text-blue-500  hover:bg-slate-200 rounded-sm p-1.5 text-center"> <div className="px-6 hidden md:block " >
-              Show 
-              <span className="ml-6 font-medium">{" 12 "}</span>
-              </div> 
-             <FaCaretDown className="ml-8 hidden md:block lg:block" size={17} color="#000"/>
+          <div style={{ display: "inline-block", position: "relative" }}>
+            <button
+              onClick={toggleshow}
+              className="flex justify-center items-center text-[16px] hover:text-blue-500  hover:bg-slate-200 rounded-sm p-1.5 text-center"
+            >
+              {" "}
+              <div className="px-6 hidden md:block ">
+                Show
+                <span className="ml-6 font-medium">{" 12 "}</span>
+              </div>
+              <FaCaretDown
+                className="ml-8 hidden md:block lg:block"
+                size={17}
+                color="#000"
+              />
             </button>
 
             {isShow && (
               <div className="Naming-dropdown absolute top-[100%] left-0 right-0 w-fit z-99 h-0.5 bg-gradient-to-r from-blue-400 to-blue-500">
-                  <div
-                  className="Naming-list" onClick={() => window.scrollTo(0, 0)}>
-                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center ">Nikes</div>
-                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center ">Dell</div>
-                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center  ">Apple</div>
-                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center  ">Adidas</div>
+                <div
+                  className="Naming-list"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center ">
+                    Nikes
+                  </div>
+                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center ">
+                    Dell
+                  </div>
+                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center  ">
+                    Apple
+                  </div>
+                  <div className="hover:text-blue-500 hover:bg-slate-100 rounded-sm p-1.5 text-center  ">
+                    Adidas
+                  </div>
                 </div>
               </div>
             )}
           </div>
         </div>
         <div className="flex justify-end gap-x-8 ">
-          <div className="hidden md:block
-           hover:text-blue-500 hover:scale-125 transition-all duration-300 ease-in-out" >
-            <Grip className="cursor-pointer"
-/>
+          <div
+            className="hidden md:block
+           hover:text-blue-500 hover:scale-125 transition-all duration-300 ease-in-out"
+          >
+            <Grip className="cursor-pointer" />
           </div>
           <div className="hover:scale-125 transition-all duration-300 ease-in-out">
             <Menu />

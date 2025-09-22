@@ -12,7 +12,7 @@ const NavBar = () => {
     { path: "/belt", name: "Belt" },
     { path: "/contact", name: "Contact" },
   ];
-  
+
   return (
     <div className="fixed top-0 left-0 right-0 bg-white shadow-md z-10 max-sm:max-w-screen">
       <div className="container mx-auto py-2 flex justify-between items-center">
@@ -31,7 +31,6 @@ const NavBar = () => {
                         ? "text-blue-400 font-semibold"
                         : "hover:text-blue-500"
                     }`}
-                  
                 >
                   {link.name}
                 </li>

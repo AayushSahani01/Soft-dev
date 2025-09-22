@@ -22,10 +22,12 @@ function App() {
                 <Sidebar />
 
                 {/* Main home Section here */}
-                <main className="col-span-9 p-4 max-sm:col-span-12
-                 max-md:col-span-12 ">
+                <main
+                  className="col-span-9 p-4 max-sm:col-span-12
+                 max-md:col-span-12 "
+                >
                   <Banner />
-                   <ProductCard />
+                  <ProductCard />
                   <Pagination />
                 </main>
               </div>
@@ -51,7 +53,9 @@ function App() {
           element={
             <>
               <Navbar />
-              <div className="pt-18 text-center text-2xl font-bold">Sneakers</div>
+              <div className="pt-18 text-center text-2xl font-bold">
+                Sneakers
+              </div>
               <Footer />
             </>
           }

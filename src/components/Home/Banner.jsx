@@ -37,10 +37,13 @@ const Banner = () => {
             </p>
 
             <button className="mt-4 px-4 py-2 text-white rounded-lg ">
-              <span className="button-shop-now hover:text-blue-500  hover:bg-transparent transition-all duration-300 ease-in-out cursor-pointer ">
+              <span className="button-shop-now hover:text-blue-500  hover:bg-transparent transition-all duration-300 ease-in-out cursor-pointer relative">
                 {" "}
                 Shop Now
+              <span className="absolute bottom-[-2px] left-0 right-[-50%]] z-99 h-[2px] w-4/6 hover:w-full transition-all duration-300 ease-in-out bg-white">
+                {" "}
               </span>
+            </span>
             </button>
           </div>
         </div>

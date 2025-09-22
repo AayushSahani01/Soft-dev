@@ -14,7 +14,7 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="fixed top-0 left-0 right-0 bg-white shadow-md z-10 max-sm:max-w-screen">
+    <div className="fixed top-0 left-0 right-0 bg-white shadow-md z-10 max-sm:max-w-screen p-1">
       <div className="container mx-auto py-2 flex justify-between items-center">
         <Link to="/">
           <img src="/logo.png" alt="logo" />

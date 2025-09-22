@@ -1,8 +1,17 @@
 import React from "react";
 import { MdOutlineLocalGroceryStore } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
+  const location = useLocation();
+
+  const navbarLinks = [
+    { path: "/", name: "Home" },
+    { path: "/bags", name: "Bag" },
+    { path: "/sneakers", name: "Sneakers" },
+    { path: "/belt", name: "Belt" },
+    { path: "/contact", name: "Contact" },
+  ];
   
   return (
     <div className="fixed top-0 left-0 right-0 bg-white shadow-md z-10 max-sm:max-w-screen">
@@ -12,35 +21,22 @@ const NavBar = () => {
         </Link>
 
         <div className="min-sm:block hidden">
-          <ul
-            className="items flex space-x-16 font-bold"
-           
-            >
-            <Link to="/">
-              <li className="cursor-pointer hover:text-blue-400 transition-all duration-300 ease-in-out  ">
-                Home
-              </li>
-            </Link>
-            <Link to="/bags">
-              <li className="cursor-pointer hover:text-blue-400 transition-all duration-300 ease-in-out">
-                Bag
-              </li>
-            </Link>
-            <Link to="/sneakers">
-              <li className="cursor-pointer hover:text-blue-400 transition-all duration-300 ease-in-out">
-                Sneakers
-              </li>
-            </Link>
-            <Link to="/belt">
-              <li className="cursor-pointer hover:text-blue-400 transition-all duration-300 ease-in-out">
-                Belt
-              </li>
-            </Link>
-            <Link to="/contact">
-              <li className="cursor-pointer hover:text-blue-400 transition-all duration-300 ease-in-out">
-                Contact
-              </li>
-            </Link>
+          <ul className="items flex space-x-16 font-medium text-base uppercase">
+            {navbarLinks.map((link) => (
+              <Link to={link.path} key={link.path}>
+                <li
+                  className={`cursor-pointer
+                    ${
+                      location.pathname === link.path
+                        ? "text-blue-400 font-semibold"
+                        : "hover:text-blue-500"
+                    }`}
+                  
+                >
+                  {link.name}
+                </li>
+              </Link>
+            ))}
           </ul>
         </div>
         <div className="flex space-x-4 md:space-x-8 justify-end items-center">

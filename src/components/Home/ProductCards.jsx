@@ -67,9 +67,9 @@ const products = [
 
 function ProductCard() {
   return (
-    <div className="w-full lg:h-auto ">
+    <div className="w-full bg-white">
 
-    <div className="container mx-auto max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 pt-4 space-y-3 ">
+    <div className="container max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 pt-2 space-y-4  mx-auto  ">
       {products.map((product) => (
         <div
           key={product.id}
@@ -87,7 +87,7 @@ function ProductCard() {
           <img
             src={product.image} 
             alt={product.title}
-            className="w-full h-42 object-cover bg-center  bg-no-repeat pb-0.5"
+            className="w-full h-42 object-cover bg-center bg-no-repeat pb-0.5"
           />
           <div className="flex flex-col text-center p-1">
             <h4
@@ -103,21 +103,23 @@ function ProductCard() {
             </h4>
 
             <div className=" text-yellow-400 mb-2 text-[15.89px] justify-center items-center inline-block">
-              {Array.from({ length: 5 }).map((_, i) => (
+              {Array.from({ length: 5 }).map((_, num) => (
                 <span
-                  key={i}
-                  className={i < product.rating ? "" : "text-gray-400"}
+                
+                key={num}
+                className={num < product.rating ? "" : "text-gray-400"}
                 >
                   <MdOutlineStar className="inline-block w-5 h-4" />
                 </span>
-              ))}
+              ))
+              }
             </div>
 
             <div
               style={{
                 display: "flex",
-                gap: "15px",
-                paddingBottom: "1rem",
+                gap: "1rem",
+                paddingBottom: "0.5rem",
               }}
             >
               <span
@@ -138,7 +140,7 @@ function ProductCard() {
                 className="text-[15.89px] font-medium"
                 style={{ color: "rgb(255, 102, 102)" }}
               >
-                {product.discount}% Off
+                {product.discount}% <b>off</b>
               </span>
             </div>
           </div>

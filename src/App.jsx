@@ -35,15 +35,15 @@ function App() {
           }
         />
 
-        {/* <Route
+        <Route
           path="/bags"
           element={
-            <>
+            <div className="pt-18">
               <Navbar />
               <ProductCard />
               <Pagination />
               <Footer />
-            </>
+            </div>
           }
         />
         <Route
@@ -51,16 +51,16 @@ function App() {
           element={
             <>
               <Navbar />
-              <div className="p-4">Sneakers</div>
+              <div className="pt-18 text-center text-2xl font-bold">Sneakers</div>
               <Footer />
             </>
           }
         />
-        <Route
+        {/* <Route
           path="/contact"
           element={
             <>
-              <Navbar /> <div>Contract us</div>
+              <Navbar /> <div className="pt-18 text-center text-2xl font-bold">Contact Us</div> <Footer />
             </>
           }
         /> */}

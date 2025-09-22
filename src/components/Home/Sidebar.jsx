@@ -109,7 +109,7 @@ const Sidebar = () => {
           <p>99</p>
         </div>
       </div>
-      <div className="md:pt-5 sm:pt-0">
+      <div className="md:pt-4 sm:pt-0">
         <div className="bg-slate-100 px-4 py-4 shadow-sm rounded-lg text-center hover:bg-slate-200">
           <button
             className="font-medium text-slate-700 uppercase hover:text-blue-400 cursor-pointer transition-all duration-300 ease-in-out"

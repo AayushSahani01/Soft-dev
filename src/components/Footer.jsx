@@ -10,16 +10,13 @@ const Footer = () => {
             <div className="flex-col justify-center items-center space-y-4  w-1/2 h-full  min-sm:w-1/3">
               <img src="/logo.png" alt="images" />
               <h2 className="text-[12px] font-normal leading-[18px]">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever.Since the 1500s, when an unknown printer.
+                Lorem Ipsum is simply dummy text of the printing and typesettin. industry. Lorem Ipsum has been the industry's standard dummy text ever.Since the 1500s, when an unknown printer.
               </h2>
             </div>
             <div className="flex-col justify-start items-center space-y-4 w-1/3">
               <h2 className="font-bold text-medium">Follow Us</h2>
               <p className="text-[12px] font-normal leading-[18px]  ">
-                Since the 1500s, when an unknown printer took a galley of type
-                and scrambled.
+                Since the 1500s, when an unknown printer took a galley of type and scrambled.
               </p>
               <div className="flex justify-start items-center space-x-8">
                 <span className="cursor-pointer">

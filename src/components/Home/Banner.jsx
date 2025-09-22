@@ -20,7 +20,7 @@ const Banner = () => {
         <div className="home mx-auto m-2 flex flex-col justify-center items-center md:flex-row-reverse md:justify-between md:gap-y-5 bg-blue-400 pt-4">
           <div className="mt-12 mb-2 hidden md:block">
             <div className="w-full h-auto object-cover bg-center rounded-sm">
-              <img src="./shoes.png" alt="" width={500} height={500} />
+              <img src="/shoes.png" alt="" width={500} height={500} />
             </div>
           </div>
           <div className="px-12 justify-end items-end mt-14 text-white ">

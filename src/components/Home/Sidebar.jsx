@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Sidebar = () => {
   // const colorlist = ["red", "blue", "green", "yellow", "orange", "pink"];
   // const [color, setColor] = useState(null);
-   const [more, setMore] = useState(false);
+   const [more, setMore] = useState("");
   
     const clickMore = () => {
       setMore(!more);
@@ -64,7 +64,6 @@ const Sidebar = () => {
       <div className="bg-slate-50 shadow-md rounded-sm px-4 py-6">
         <h2 className="font-medium  mt-4 mb-4 uppercase">Color</h2>
         <div className="flex gap-4">
-          {/* // &**** Using map function to each ele follow*******  */}
           {/* { colorlist.map((colr) =>
           <button
             key={colr}
@@ -110,7 +109,7 @@ const Sidebar = () => {
           <p>99</p>
         </div>
       </div>
-      <div className="pt-6 ">
+      <div className="md:pt-5 sm:pt-0">
         <div className="bg-slate-100 px-4 py-4 shadow-sm rounded-lg text-center hover:bg-slate-200">
           <button
             className="font-medium text-slate-700 uppercase hover:text-blue-400 cursor-pointer transition-all duration-300 ease-in-out"
@@ -118,7 +117,7 @@ const Sidebar = () => {
           >
             More
           </button>
-          {more ? "" : <h2 className="text-xs text-overline text-slate-500 uppercase">Not Available!</h2>}
+          {more ?  <h2 className="text-xs text-overline text-slate-500 uppercase">Not Available!</h2> :""}
         </div>
       </div>
     </aside>

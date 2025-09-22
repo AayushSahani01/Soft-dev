@@ -25,6 +25,7 @@ const PageNotFound = () =>  {
         </div>
 
          
+             <p className="text-sm md:text-xl lg:text-2xl text-white mt-4 text-center font-light"><b>We're sorry,{" "}</b>Page Not Found!<br /> you're looking for something else.</p>
 
         <div className="pt-10 flex flex-col sm:flex-row gap-4 justify-center items-center relative z-10">
           

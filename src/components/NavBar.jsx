@@ -3,6 +3,7 @@ import { MdOutlineLocalGroceryStore } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
+  
   return (
     <div className="fixed top-0 left-0 right-0 bg-white shadow-md z-10 max-sm:max-w-screen">
       <div className="container mx-auto py-2 flex justify-between items-center">
@@ -11,7 +12,10 @@ const NavBar = () => {
         </Link>
 
         <div className="min-sm:block hidden">
-          <ul className="items flex space-x-16 font-bold">
+          <ul
+            className="items flex space-x-16 font-bold"
+           
+            >
             <Link to="/">
               <li className="cursor-pointer hover:text-blue-400 transition-all duration-300 ease-in-out  ">
                 Home
@@ -44,7 +48,7 @@ const NavBar = () => {
 
           <div className="flex space-x-4 text-xl max-sm:text-lg">
             <h4>Items</h4>
-            <h5 className=" text-slate-400">$0.00</h5>
+            <h5 className=" text-slate-400 ">$0.00</h5>
           </div>
         </div>
       </div>

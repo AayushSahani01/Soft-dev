@@ -25,10 +25,8 @@ This is a simple web application
 - Node.js (v12.0.0 or higher)
 - npm (v6.4.1 or higher)
 - Git
-- ReactJS
-- Tailwind CSS
 
-### Installation
+### Locally Setup the projects
 
 _1. Clone the repository:_
 
